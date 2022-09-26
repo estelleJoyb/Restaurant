@@ -11,7 +11,7 @@ class Plat {
       return this.nom;
     }
   
-    setNom(String nom) {
+    setNom(nom) {
       this.nom = nom;
     }
   
@@ -19,7 +19,7 @@ class Plat {
       return this.description;
     }
   
-    setDescription(String description) {
+    setDescription(description) {
       this.description = description;
     }
   
@@ -27,7 +27,7 @@ class Plat {
       return this.prix;
     }
   
-    setPrix(Double prix) {
+    setPrix(prix) {
       this.prix = prix;
     }
   
@@ -35,10 +35,7 @@ class Plat {
       return this.typePlat
     }
   
-    setTypePlat(TypePlat typePlat) {
+    setTypePlat(typePlat) {
       this.typePlat = typePlat;
     }
-  
-  
-    
   }
