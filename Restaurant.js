@@ -54,26 +54,26 @@ class Restaurant {
     }
 
     //setters :
-    setStock(stock Stock){
-        this.stock = stock;
-    }
+    // setStock(stock Stock){
+    //     this.stock = stock;
+    // }
 
     //add :
 
-    addEmploye(empl Employe){
-        this.employes.push(empl)
-    }
+    // addEmploye(empl Employe){
+    //     this.employes.push(empl)
+    // }
 
-    addReservation(resa Reservation){
-        this.reservations.push(resa);
-    }
+    // addReservation(resa Reservation){
+    //     this.reservations.push(resa);
+    // }
 
-    addMenu(menu Menu){
-        this.menus.push(menu);
-    }
+    // addMenu(menu Menu){
+    //     this.menus.push(menu);
+    // }
 
-    addPlat(plat Plat){
-        this.plats.push(plat);
-    }
+    // addPlat(plat Plat){
+    //     this.plats.push(plat);
+    // }
 
 }
