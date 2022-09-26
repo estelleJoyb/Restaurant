@@ -18,23 +18,23 @@ class Menu {
         return this.prix;
     }
 
-    setNom(nom String){
-        this.nom = nom
+    setNom(nom){
+        this.nom = nom;
     }
 
-    setDescription(description String){
+    setDescription(description){
         this.description = description;
     }
 
-    setPrix(prix Double){
+    setPrix(prix){
         this.prix = prix;
     }
 
-    addPlat(plat Plat){
+    addPlat(plat){
         this.plats.push(plat);
     }
 
-    getPlat(plat Plat){
+    getPlat(plat){
         return this.plat;
     }
 }
