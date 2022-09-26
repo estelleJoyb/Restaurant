@@ -1,0 +1,40 @@
+class Menu {
+
+    constructor(nom, description, prix) {
+        this.nom = nom;
+        this.description = description;
+        this.prix = prix;
+    }        
+
+    getNom(){
+        return this.nom;
+    }
+        
+    getDescription(){
+        return this.description;
+    }
+
+    getPrix(){
+        return this.prix;
+    }
+
+    setNom(nom String){
+        this.nom = nom
+    }
+
+    setDescription(description String){
+        this.description = description;
+    }
+
+    setPrix(prix Double){
+        this.prix = prix;
+    }
+
+    addPlat(plat Plat){
+        this.plats.push(plat);
+    }
+
+    getPlat(plat Plat){
+        return this.plat;
+    }
+}
