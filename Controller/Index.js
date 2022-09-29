@@ -7,7 +7,7 @@ import { Restaurant } from '../Model/Restaurant.js';
 import { Stock } from '../Model/Stock.js';
 import { TypeRestaurant } from "../Model/TypeRestaurant.js";
 import { TypeDePlat } from "../Model/TypeDePlat.js";
-import { Categorie } from "../Model/Categorie.js";
+import Categorie  from "../Model/Categorie.js";
 
 
 // require('../Model/Salaires');

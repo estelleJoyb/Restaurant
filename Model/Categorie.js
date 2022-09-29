@@ -3,3 +3,5 @@ export const Categorie = {
 	Employe_cuisine: "employe_cuisine",
 	Administratif: "administratif"
 }
+
+export default Categorie;
