@@ -50,7 +50,7 @@
     </div>
     <div class="m-5">
         <h2>Réservations</h2>
-        <form id="form_reserver"  onsubmit="Reserver()">
+        <form id="form_reserver">
             <div class="form-group">
             <label for="input_nom_reservation">Nom</label>
             <input type="text" class="form-control" id="input_nom_reservation" placeholder="Nom" required>
@@ -63,7 +63,7 @@
                 <label for="input_nbpers_reservation">Nombre de personnes</label>
                 <input type="text" class="form-control" id="input_nbpers_reservation" placeholder="2" required>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="Reserver()">Valider</button>
         </form>
     </div>
     
