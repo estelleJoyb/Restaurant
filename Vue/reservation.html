@@ -74,34 +74,24 @@
 
     <h1 class="text-center">Voyage Culinaire</h1>
     <p class="text-center">Découvrez de nouveaux horizons gustatifs</p>
-<!--     
-    <div class="d-flex justify-content-between">
-        <div class="m-2" id="carte">
-            <h2>Notre Carte</h2>
-            <div id="bloc_plat"></div>
+    <h2 class="text-center">Réservations</h2>
+    
+    <form id="form_reserver" class="hidden" onsubmit="return Reserver()">
+        <div class="form-group">
+        <label for="input_nom_reservation">Nom</label>
+        <input type="text" class="form-control" id="input_nom_reservation" placeholder="Nom" required>
         </div>
-    
-        <div class="m-2" id="menus">
-            <h2>Nos Menus</h2>
-            <div id="bloc_menu"></div>
+        <div class="form-group">
+        <label for="input_date_reservation">Date</label>
+        <input type="text" class="form-control" id="input_date_reservation" placeholder="jj/mm/yyyy" required>
         </div>
-    
-        <div class="m-2" id="contact">
-            <h2>Où nous trouver ?</h2>
+        <div class="form-group">
+            <label for="input_nbpers_reservation">Nombre de personnes</label>
+            <input type="text" class="form-control" id="input_nbpers_reservation" placeholder="2" required>
         </div>
-        <div class="m-2" id="equipe">
-            <h2>Notre équipe</h2>
-    
-        </div>
-    </div> -->
-    
-
-    
-
-    
-    
-    
-
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+        
 
 
 </body>
