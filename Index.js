@@ -1,5 +1,6 @@
 import {Restaurant} from './class/Restaurant';
 import {Employe} from './class/Employe';
+import {Salaires} from './class/Salaires';
 import {Stock} from './class/Stock';
 import {Plat} from './class/Plat';
 import {Menu} from './class/Menu';
@@ -17,6 +18,16 @@ VoyageCulinaire.addEmpl(Sarah);
 VoyageCulinaire.addEmpl(Quaivine);
 VoyageCulinaire.addEmpl(Pizza);
 VoyageCulinaire.addEmpl(Catherine);
+
+//salaires
+const S_Sarah = new Salaires(13,40);
+Sarah.setSalaire(S_Sarah);
+const S_Quaivine = new Salaires(5,45);
+Quaivine.setSalaire(S_Quaivine);
+const S_Pizza = new Salaires(15,45);
+Pizza.setSalaire(S_Pizza);
+const S_Catherine = new Salaires(12,35);
+Catherine.setSalaire(S_Catherine);
 
 //stock
 const BlanquetteVeau = new Stock("Blanquette de Veau",3);
