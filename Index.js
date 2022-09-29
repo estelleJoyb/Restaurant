@@ -81,7 +81,8 @@ VoyageCulinaire.addReservation(R_Joseph);
 VoyageCulinaire.addReservation(R_Dan);
 
 function Init(){
-    var BlocMenu = document.getElementById("");
+    console.log("INITIALISATION");
+    var BlocMenu = document.getElementById("carte");
     var nbPlat = VoyageCulinaire.getPlats().size();
     var ul1 = document.createElement("ul");
     BlocMenu.appendChild(ul1);
@@ -94,4 +95,4 @@ function Init(){
     BlocMenu.appendChild(ul2);
 }
 
-Init();
+document.onload(Init());
