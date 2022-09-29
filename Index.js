@@ -79,3 +79,8 @@ const R_Dan = new Reservation("25/09/2022","Dan",Status.Regle);
 VoyageCulinaire.addReservation(R_Mireille);
 VoyageCulinaire.addReservation(R_Joseph);
 VoyageCulinaire.addReservation(R_Dan);
+
+function Init(){
+    var NomResto = document.getElementById("");
+    NomResto.innerText = VoyageCulinaire.getNom();
+}
