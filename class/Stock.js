@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 export class Stock{
+=======
+class Stock extends Restaurant{
+>>>>>>> 5ce87b5 (test)
 
     constructor(produit, nbProduit){
         this.produit = produit;

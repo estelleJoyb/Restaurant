@@ -1,4 +1,4 @@
-class Menu {
+class Menu extends Restaurant {
 
     constructor(nom, description, prix) {
         this.nom = nom;

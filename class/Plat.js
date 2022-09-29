@@ -1,4 +1,4 @@
-class Plat {
+class Plat extends Restaurant {
 
     constructor(nom, description, prix, typePlat) {
       this.nom = nom;
