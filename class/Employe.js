@@ -1,4 +1,4 @@
-class Employe{
+class Employe extends Restaurant{
     constructor(nom, prenom, adresse, tel, rib,categorie){
         this.nom = nom;
         this.prenom = prenom;

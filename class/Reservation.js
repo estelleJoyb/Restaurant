@@ -1,4 +1,4 @@
-class Reservation {
+class Reservation extends Restaurant{
 
     constructor(dateRes, nom, status) {
         this.dateRes = dateRes;
