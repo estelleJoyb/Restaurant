@@ -5,13 +5,13 @@
 // import {Plat} from '../class/Plat';
 // import {Menu} from '../class/Menu';
 // import {Reservation} from '../class/Reservation';
-require('../Model/Restaurant');
-require('../Model/Employe');
-require('../Model/Salaires');
-require('../Model/Stock');
-require('../Model/Plat');
-require('../Model/Menu');
-require('../Model/Reservation');
+require(['../Model/Restaurant']);
+require(['../Model/Employe']);
+require(['../Model/Salaires']);
+require(['../Model/Stock']);
+require(['../Model/Plat']);
+require(['../Model/Menu']);
+require(['../Model/Reservation']);
 const VoyageCulinaire = new Restaurant("Voyage culinaire","12, rue de la vierge","06 12 12 12 12",TypeRestaurant.Bistro,"12h-14h & 19h-23h","30");
 
 //employés
