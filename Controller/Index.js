@@ -99,38 +99,46 @@ function Init()
     VoyageCulinaire.addReservation(R_Dan);
     //plats
     var BlocPlat = document.getElementById("bloc_plat");
-    var plats = VoyageCulinaire.getPlat();
-    var ul1 = document.createElement("ul");
-    BlocPlat.appendChild(ul1);
-    for(var i = 0; i< VoyageCulinaire.getPlat().size; i++){
-        var li = document.createElement("li");
-        li.classList.add("plat");
-        li.innerText = plats[i].getNom() +" : "+ plats[i].getDescription();
-        BlocPlat.appendChild(li);
+    if(BlocPlat != null){
+        var plats = VoyageCulinaire.getPlat();
+        var ul1 = document.createElement("ul");
+        BlocPlat.appendChild(ul1);
+        for(var i = 0; i< VoyageCulinaire.getPlat().size; i++){
+            var li = document.createElement("li");
+            li.classList.add("plat");
+            li.innerText = plats[i].getNom() +" : "+ plats[i].getDescription();
+            BlocPlat.appendChild(li);
+        }
+        var ul2 = document.createElement("ul");
+        BlocPlat.appendChild(ul2);
     }
-    var ul2 = document.createElement("ul");
-    BlocPlat.appendChild(ul2);
-
+    
     //menus
     var BlocMenu = document.getElementById("bloc_menu");
-    var menus = VoyageCulinaire.getMenus();
-    var ul1 = document.createElement("ul");
-    BlocMenu.appendChild(ul1);
-    for(var i = 0; i< VoyageCulinaire.getMenus().size; i++){
-        var li = document.createElement("li");
-        li.classList.add("menu");
-        li.innerText = menus[i].getNom() + " : " +menus[i].getDescription();
-        BlocMenu.appendChild(li);
+    if(BlocMenu != null){
+        var menus = VoyageCulinaire.getMenus();
+        var ul1 = document.createElement("ul");
+        BlocMenu.appendChild(ul1);
+        for(var i = 0; i< VoyageCulinaire.getMenus().size; i++){
+            var li = document.createElement("li");
+            li.classList.add("menu");
+            li.innerText = menus[i].getNom() + " : " +menus[i].getDescription();
+            BlocMenu.appendChild(li);
+        }
+        var ul2 = document.createElement("ul");
+        BlocMenu.appendChild(ul2);
     }
-    var ul2 = document.createElement("ul");
-    BlocMenu.appendChild(ul2);
+    
 
     //adresse : 
     var bloc_adresse = document.getElementById("contact");
-    var adresse = document.createElement("p");
-    adresse.classList.add("adresse");
-    adresse.innerText = VoyageCulinaire.getAdresse();
-    bloc_adresse.appendChild(adresse);
+    if(bloc_adresse != null){
+        var adresse = document.createElement("p");
+        adresse.classList.add("adresse");
+        adresse.innerText = VoyageCulinaire.getAdresse();
+        bloc_adresse.appendChild(adresse);
+    }
+    
 
     //equipe :
     var blocEquipe = document.getElementById("blocEquipe");
