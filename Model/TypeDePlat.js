@@ -1,4 +1,4 @@
-  const TypeDePlat = {
+export const TypeDePlat = {
     Aperitif: "Aperitif",
     Entree: "Entrée",
     PlatPrincipal: "Plat Principal",

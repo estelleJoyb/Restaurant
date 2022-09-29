@@ -1,10 +1,13 @@
-// import { Salaires } from '../Model/Salaires.js';
-// import { Employe } from '../Model/Employe.js';
-// import { Menu } from '../Model/Menu.js';
-// import { Plat } from '../Model/Plat.js';
-// import { Reservation } from '../Model/Reservation';
-// import { Restaurant } from '../Model/Restaurant';
-// import { Stock } from '../Model/Stock.js';
+import { Salaires } from '../Model/Salaires.js';
+import { Employe } from '../Model/Employe.js';
+import { Menu } from '../Model/Menu.js';
+import { Plat } from '../Model/Plat.js';
+import { Reservation } from '../Model/Reservation.js';
+import { Restaurant } from '../Model/Restaurant.js';
+import { Stock } from '../Model/Stock.js';
+import { TypeRestaurant } from "../Model/TypeRestaurant.js";
+import { TypeDePlat } from "../Model/TypeDePlat.js";
+import { Categorie } from "../Model/Categorie.js";
 
 
 // require('../Model/Salaires');
@@ -19,6 +22,7 @@
 
 function Init()
 {
+    console.log("allo");
     const VoyageCulinaire = new Restaurant("Voyage culinaire","12, rue de la vierge","06 12 12 12 12",TypeRestaurant.Bistro,"12h-14h & 19h-23h","30");
 
     //employés
@@ -27,10 +31,10 @@ function Init()
     const Pizza = new Employe("Pizza","Steve","2, rue de chez moi","06 57 85 64 16","FR7614508000407221865687I73",Categorie.Serveur);
     const Catherine = new Employe("Catherine","Bonnevue","79, avenue de la S.P.A","07 95 10 06 46","FR7230003000403484712973K89",Categorie.Administratif);
 
-    VoyageCulinaire.addEmpl(Sarah);
-    VoyageCulinaire.addEmpl(Quaivine);
-    VoyageCulinaire.addEmpl(Pizza);
-    VoyageCulinaire.addEmpl(Catherine);
+    VoyageCulinaire.addEmploye(Sarah);
+    VoyageCulinaire.addEmploye(Quaivine);
+    VoyageCulinaire.addEmploye(Pizza);
+    VoyageCulinaire.addEmploye(Catherine);
 
     //salaires
     const S_Sarah = new Salaires(13,40);
@@ -140,3 +144,5 @@ function Reserver()
 function initEquipe() {
 
 }
+
+Init();
