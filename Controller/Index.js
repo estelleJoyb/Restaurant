@@ -23,7 +23,6 @@ import { Status } from "../Model/Status.js";
 
 function Init()
 {
-    console.log("allo");
     const VoyageCulinaire = new Restaurant("Voyage culinaire","12, rue de la vierge","06 12 12 12 12",TypeRestaurant.Bistro,"12h-14h & 19h-23h","30");
 
     //employés
@@ -102,14 +101,14 @@ function Init()
     if(BlocPlat != null){
         var plats = VoyageCulinaire.getPlat();
         var ul1 = document.createElement("ul");
-        BlocPlat.appendChild(ul1);
-        for(var i = 0; i< VoyageCulinaire.getPlat().size; i++){
+        
+        for(var i = 0; i< VoyageCulinaire.getPlat().length; i++){
             var li = document.createElement("li");
             li.classList.add("plat");
             li.innerHTML = plats[i].getNom() +" : "+ plats[i].getDescription();
            ul1.appendChild(li);
         }
-        
+        BlocPlat.appendChild(ul1);
     }
     
     //menus
@@ -117,14 +116,14 @@ function Init()
     if(BlocMenu != null){
         var menus = VoyageCulinaire.getMenus();
         var ul2 = document.createElement("ul");
-        BlocMenu.appendChild(ul1);
-        for(var i = 0; i< VoyageCulinaire.getMenus().size; i++){
+        
+        for(var i = 0; i< VoyageCulinaire.getMenus().length; i++){
             var li = document.createElement("li");
             li.classList.add("menu");
             li.innerHTML = menus[i].getNom() + " : " +menus[i].getDescription();
             ul2.appendChild(li);
         }
-        
+        BlocMenu.appendChild(ul2);
     }
     
 
@@ -142,8 +141,8 @@ function Init()
     var blocEquipe = document.getElementById("blocEquipe");
     if(blocEquipe != null){
         var ul3 = document.createElement("ul");
-        blocEquipe.appendChild(ul3);
-            for (var j = 0; j < VoyageCulinaire.getEmployes().length; j++){
+            blocEquipe.appendChild(ul3);
+            for (var j = 0; j <= VoyageCulinaire.getEmployes().length; j++){
                 var li3 = document.createElement("li");
                 li3.classList.add("equipe");
                 li3.innerHTML = VoyageCulinaire.getEmployes()[j].getNom();
@@ -154,8 +153,7 @@ function Init()
    
 }
 
-function Reserver()
-{
+function Reserver() {
     var R_nom = document.getElementById("input_nom_reservation").innerText;
     var R_date = document.getElementById("input_date_reservation").innerText;
     var R_nbpers = document.getElementById("input_nbpers_reservation").innerText;
