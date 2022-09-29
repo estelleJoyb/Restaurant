@@ -128,13 +128,15 @@ function Init()
     bloc_adresse.appendChild(adresse);
 }
 
-
-//Methodes :
-Reserver()
+function Reserver()
 {
     var R_nom = document.getElementById("input_nom_reservation").innerText;
     var R_date = document.getElementById("input_date_reservation").innerText;
     var R_nbpers = document.getElementById("input_nbpers_reservation").innerText;
     var newResa = new Reservation(R_nom, R_date, R_nbpers);
     VoyageCulinaire.addReservation(newResa);
+}
+
+function initEquipe() {
+
 }
