@@ -152,4 +152,5 @@ function Reserver()
     var R_nbpers = document.getElementById("input_nbpers_reservation").innerText;
     var newResa = new Reservation(R_nom, R_date, R_nbpers);
     VoyageCulinaire.addReservation(newResa);
+    console.log(VoyageCulinaire.getReservation().getNom());
 }
