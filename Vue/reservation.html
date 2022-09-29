@@ -1,0 +1,108 @@
+<!-- <div class="text-center" id="reservations">
+    <button onclick="afficherFormReservation()" id="btn_reserver">Réserver une table</button>
+    <form id="form_reserver" class="hidden" onsubmit="return Reserver()">
+        <div class="form-group">
+          <label for="input_nom_reservation">Nom</label>
+          <input type="text" class="form-control" id="input_nom_reservation" placeholder="Nom" required>
+        </div>
+        <div class="form-group">
+          <label for="input_date_reservation">Date</label>
+          <input type="text" class="form-control" id="input_date_reservation" placeholder="jj/mm/yyyy" required>
+        </div>
+        <div class="form-group">
+            <label for="input_nbpers_reservation">Nombre de personnes</label>
+            <input type="text" class="form-control" id="input_nbpers_reservation" placeholder="2" required>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+    
+    <script type="module" src="../Model/Salaires.js"></script>
+    <script type="module" src="../Model/Employe.js"></script>
+    <script type="module" src="../Model/Restaurant.js"></script>
+    
+    <script type="module" src="../Model/Menu.js"></script>
+    <script type="module" src="../Model/Plat.js"></script>
+    <script type="module" src="../Model/Reservation.js"></script>
+    
+    <script type="text/javascript" src="../Controller/Index.js"></script>
+    <!--Style -->
+    <link href="../index.css" rel="stylesheet">
+    <title>Voyage Culinaire</title>
+</head>
+<body onload="Init()">
+     <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Où nous trouver ?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reservation.html">Réservations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#equipe">Notre équipe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#plats">Nos plats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#menus">Nos menus</a>
+            </li>
+        </ul>
+    
+    </nav> 
+
+    <h1 class="text-center">Voyage Culinaire</h1>
+    <p class="text-center">Découvrez de nouveaux horizons gustatifs</p>
+<!--     
+    <div class="d-flex justify-content-between">
+        <div class="m-2" id="carte">
+            <h2>Notre Carte</h2>
+            <div id="bloc_plat"></div>
+        </div>
+    
+        <div class="m-2" id="menus">
+            <h2>Nos Menus</h2>
+            <div id="bloc_menu"></div>
+        </div>
+    
+        <div class="m-2" id="contact">
+            <h2>Où nous trouver ?</h2>
+        </div>
+        <div class="m-2" id="equipe">
+            <h2>Notre équipe</h2>
+    
+        </div>
+    </div> -->
+    
+
+    
+
+    
+    
+    
+
+
+
+</body>
+</html>
