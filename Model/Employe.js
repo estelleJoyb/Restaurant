@@ -1,6 +1,4 @@
-import {Salaires} from 'Salaires';
-
-class Employe extends Restaurant{
+class Employe {
     constructor(nom, prenom, adresse, tel, rib,categorie){
         this.nom = nom;
         this.prenom = prenom;
@@ -39,6 +37,7 @@ class Employe extends Restaurant{
     getSalaire(){
         return this.salaire;
     }
+
     getPaie(){
         var tauxHoraire = this.salaire.getTauxHoraire();
         var nbHeures = this.salaire.getNbHeures();
