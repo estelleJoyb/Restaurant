@@ -130,6 +130,19 @@ function Init()
     adresse.classList.add("adresse");
     adresse.innerText = VoyageCulinaire.getAdresse();
     bloc_adresse.appendChild(adresse);
+
+    //equipe :
+    var blocEquipe = document.getElementById("blocEquipe");
+    var ul3 = document.createElement("ul");
+    blocEquipe.appendChild(ul3);
+    for (var j = 0; j < VoyageCulinaire.Employe.size(); j++){
+        var li3 = document.createElement("li");
+        li3.classList.add("equipe");
+        li4.innerText = Employe[i].getNom;
+        blocEquipe.appendChild(li);
+    }
+    var ul4 = document.createElement("ul");
+    blocEquipe.appendChild(ul3);
 }
 
 function Reserver()
@@ -140,9 +153,3 @@ function Reserver()
     var newResa = new Reservation(R_nom, R_date, R_nbpers);
     VoyageCulinaire.addReservation(newResa);
 }
-
-function initEquipe() {
-
-}
-
-Init();
