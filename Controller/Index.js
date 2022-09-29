@@ -130,12 +130,6 @@ function Init()
 
 
 //Methodes :
-afficherFormReservation()
-{
-    document.getElementById("form_reserver").classList.remove("hidden");
-    document.getElementById("btn_reserver").classList.add("hidden");
-}
-
 Reserver()
 {
     var R_nom = document.getElementById("input_nom_reservation").innerText;
@@ -143,6 +137,4 @@ Reserver()
     var R_nbpers = document.getElementById("input_nbpers_reservation").innerText;
     var newResa = new Reservation(R_nom, R_date, R_nbpers);
     VoyageCulinaire.addReservation(newResa);
-    document.getElementById("form_reserver").classList.add("hidden");
-    document.getElementById("btn_reserver").classList.remove("hidden");
 }
