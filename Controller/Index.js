@@ -107,26 +107,24 @@ function Init()
             var li = document.createElement("li");
             li.classList.add("plat");
             li.innerHTML = plats[i].getNom() +" : "+ plats[i].getDescription();
-            BlocPlat.appendChild(li);
+           ul1.appendChild(li);
         }
-        var ul2 = document.createElement("ul");
-        BlocPlat.appendChild(ul2);
+        
     }
     
     //menus
     var BlocMenu = document.getElementById("bloc_menu");
     if(BlocMenu != null){
         var menus = VoyageCulinaire.getMenus();
-        var ul1 = document.createElement("ul");
+        var ul2 = document.createElement("ul");
         BlocMenu.appendChild(ul1);
         for(var i = 0; i< VoyageCulinaire.getMenus().size; i++){
             var li = document.createElement("li");
             li.classList.add("menu");
             li.innerHTML = menus[i].getNom() + " : " +menus[i].getDescription();
-            BlocMenu.appendChild(li);
+            ul2.appendChild(li);
         }
-        var ul2 = document.createElement("ul");
-        BlocMenu.appendChild(ul2);
+        
     }
     
 
@@ -149,10 +147,9 @@ function Init()
                 var li3 = document.createElement("li");
                 li3.classList.add("equipe");
                 li3.innerHTML = Employe[j].getNom();
-                blocEquipe.appendChild(li3);
+                ul3.appendChild(li3);
             }
-            var ul4 = document.createElement("ul");
-            blocEquipe.appendChild(ul4);
+            
     }
    
 }
