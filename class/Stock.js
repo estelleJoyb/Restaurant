@@ -1,4 +1,4 @@
-class Stock{
+export class Stock{
 
     constructor(produit, nbProduit){
         this.produit = produit;

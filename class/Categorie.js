@@ -1,9 +1,5 @@
-class Categorie {
-    static Serveur = new Categorie("Serveur")
-    static EmployeCuisine = new Categorie("EmployeCuisine")
-    static Administratif = new Categorie("Administratif")
-  
-    constructor(name) {
-      this.name = name
-    }
-  }
+const Categorie = {
+	Serveur: "serveur",
+	Employe_cuisine: "employe_cuisine",
+	Administratif: "administratif"
+}
