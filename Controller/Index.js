@@ -152,7 +152,7 @@ function Init()
                 blocEquipe.appendChild(li3);
             }
             var ul4 = document.createElement("ul");
-            blocEquipe.appendChild(ul3);
+            blocEquipe.appendChild(ul4);
     }
    
 }
