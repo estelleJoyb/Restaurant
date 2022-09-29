@@ -154,3 +154,5 @@ function Reserver()
     VoyageCulinaire.addReservation(newResa);
     console.log(VoyageCulinaire.getReservation().getNom());
 }
+
+Init();
