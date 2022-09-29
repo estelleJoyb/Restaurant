@@ -1,4 +1,4 @@
-class Salaires {
+export class Salaires {
 
     constructor(tauxHoraire, nbHeures) {
         this.tauxHoraire = tauxHoraire;

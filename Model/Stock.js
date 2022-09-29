@@ -1,4 +1,4 @@
-class Stock extends Restaurant{
+export class Stock {
 
     constructor(produit, nbProduit){
         this.produit = produit;

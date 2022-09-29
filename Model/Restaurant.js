@@ -1,4 +1,4 @@
-class Restaurant {
+export class Restaurant {
     constructor(nom, adresse, tel, type, horaires, nbPlaces){
         this.nom = nom;
         this.adresse = adresse;

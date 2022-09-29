@@ -1,4 +1,4 @@
-class Plat extends Restaurant {
+export class Plat {
 
     constructor(nom, description, prix, typePlat) {
       this.nom = nom;
