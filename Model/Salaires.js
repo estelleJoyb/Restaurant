@@ -1,4 +1,4 @@
-class Salaires extends Employe{
+class Salaires {
 
     constructor(tauxHoraire, nbHeures) {
         this.tauxHoraire = tauxHoraire;

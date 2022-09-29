@@ -34,7 +34,7 @@ class Menu extends Restaurant {
         this.plats.push(plat);
     }
 
-    getPlat(plat){
-        return this.plat;
+    getPlats(){
+        return this.plats;
     }
 }

@@ -1,11 +1,17 @@
-import {Restaurant} from './class/Restaurant';
-import {Employe} from './class/Employe';
-import {Salaires} from './class/Salaires';
-import {Stock} from './class/Stock';
-import {Plat} from './class/Plat';
-import {Menu} from './class/Menu';
-import {Reservation} from './class/Reservation';
-
+// import {Restaurant} from '../class/Restaurant';
+// import {Employe} from '../class/Employe';
+// import {Salaires} from '../class/Salaires';
+// import {Stock} from '../class/Stock';
+// import {Plat} from '../class/Plat';
+// import {Menu} from '../class/Menu';
+// import {Reservation} from '../class/Reservation';
+require('../Model/Restaurant');
+require('../Model/Employe');
+require('../Model/Salaires');
+require('../Model/Stock');
+require('../Model/Plat');
+require('../Model/Menu');
+require('../Model/Reservation');
 const VoyageCulinaire = new Restaurant("Voyage culinaire","12, rue de la vierge","06 12 12 12 12",TypeRestaurant.Bistro,"12h-14h & 19h-23h","30");
 
 //employés
@@ -80,18 +86,59 @@ VoyageCulinaire.addReservation(R_Mireille);
 VoyageCulinaire.addReservation(R_Joseph);
 VoyageCulinaire.addReservation(R_Dan);
 
-function Init(){
-    var BlocMenu = document.getElementById("");
-    var nbPlat = VoyageCulinaire.getPlats().size();
+function Init()
+{
+    //plats
+    var BlocPlat = document.getElementById("bloc_plat");
+    var plats = VoyageCulinaire.getPlats();
     var ul1 = document.createElement("ul");
     BlocMenu.appendChild(ul1);
-    for(var i = 0; i< nbPlat; i++){
+    for(var i = 0; i< VoyageCulinaire.getPlats().size(); i++){
         var li = document.createElement("li");
         li.classList.add("plat");
+        li.innerText = plats[i].getNom() +" : "+ plats[i].getDescription();
+        BlocMenu.appendChild(li);
+    }
+    var ul2 = document.createElement("ul");
+    BlocPlat.appendChild(ul2);
+
+    //menus
+    var BlocMenu = document.getElementById("bloc_menu");
+    var menus = VoyageCulinaire.getMenus();
+    var ul1 = document.createElement("ul");
+    BlocMenu.appendChild(ul1);
+    for(var i = 0; i< VoyageCulinaire.getMenus().size(); i++){
+        var li = document.createElement("li");
+        li.classList.add("menu");
+        li.innerText = menus[i].getNom() + " : " +menus[i].getDescription();
         BlocMenu.appendChild(li);
     }
     var ul2 = document.createElement("ul");
     BlocMenu.appendChild(ul2);
+
+    //adresse : 
+    var bloc_adresse = document.getElementById("contact");
+    var adresse = document.createElement("p");
+    adresse.classList.add("adresse");
+    adresse.innerText = VoyageCulinaire.getAdresse();
+    bloc_adresse.appendChild(adresse);
 }
 
-Init();
+
+//Methodes :
+afficherFormReservation()
+{
+    document.getElementById("form_reserver").classList.remove("hidden");
+    document.getElementById("btn_reserver").classList.add("hidden");
+}
+
+Reserver()
+{
+    var R_nom = document.getElementById("input_nom_reservation").innerText;
+    var R_date = document.getElementById("input_date_reservation").innerText;
+    var R_nbpers = document.getElementById("input_nbpers_reservation").innerText;
+    var newResa = new Reservation(R_nom, R_date, R_nbpers);
+    VoyageCulinaire.addReservation(newResa);
+    document.getElementById("form_reserver").classList.add("hidden");
+    document.getElementById("btn_reserver").classList.remove("hidden");
+}

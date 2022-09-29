@@ -45,7 +45,7 @@ class Restaurant {
         return this.reservations;
     }
 
-    getMenu(){
+    getMenus(){
         return this.menus;
     }
 
