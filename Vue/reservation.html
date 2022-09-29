@@ -75,24 +75,25 @@
         <h1 class="text-center">Voyage Culinaire</h1>
         <p class="text-center">Découvrez de nouveaux horizons gustatifs</p>
     </div>
+    <div class="m-3">
+        <h2>Réservations</h2>
+        <form id="form_reserver"  onsubmit="return Reserver()">
+            <div class="form-group">
+            <label for="input_nom_reservation">Nom</label>
+            <input type="text" class="form-control" id="input_nom_reservation" placeholder="Nom" required>
+            </div>
+            <div class="form-group">
+            <label for="input_date_reservation">Date</label>
+            <input type="text" class="form-control" id="input_date_reservation" placeholder="jj/mm/yyyy" required>
+            </div>
+            <div class="form-group">
+                <label for="input_nbpers_reservation">Nombre de personnes</label>
+                <input type="text" class="form-control" id="input_nbpers_reservation" placeholder="2" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
     
-    <h2>Réservations</h2>
-
-    <form id="form_reserver" onsubmit="return Reserver()">
-        <div class="form-group">
-        <label for="input_nom_reservation">Nom</label>
-        <input type="text" class="form-control" id="input_nom_reservation" placeholder="Nom" required>
-        </div>
-        <div class="form-group">
-        <label for="input_date_reservation">Date</label>
-        <input type="text" class="form-control" id="input_date_reservation" placeholder="jj/mm/yyyy" required>
-        </div>
-        <div class="form-group">
-            <label for="input_nbpers_reservation">Nombre de personnes</label>
-            <input type="text" class="form-control" id="input_nbpers_reservation" placeholder="2" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
         
 
 
