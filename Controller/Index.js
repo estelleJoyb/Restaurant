@@ -106,7 +106,7 @@ function Init()
         for(var i = 0; i< VoyageCulinaire.getPlat().size; i++){
             var li = document.createElement("li");
             li.classList.add("plat");
-            li.innerText = plats[i].getNom() +" : "+ plats[i].getDescription();
+            li.innerHTML = plats[i].getNom() +" : "+ plats[i].getDescription();
             BlocPlat.appendChild(li);
         }
         var ul2 = document.createElement("ul");
@@ -122,7 +122,7 @@ function Init()
         for(var i = 0; i< VoyageCulinaire.getMenus().size; i++){
             var li = document.createElement("li");
             li.classList.add("menu");
-            li.innerText = menus[i].getNom() + " : " +menus[i].getDescription();
+            li.innerHTML = menus[i].getNom() + " : " +menus[i].getDescription();
             BlocMenu.appendChild(li);
         }
         var ul2 = document.createElement("ul");
@@ -148,7 +148,7 @@ function Init()
             for (var j = 0; j < VoyageCulinaire.getEmployes().size; j++){
                 var li3 = document.createElement("li");
                 li3.classList.add("equipe");
-                li3.innerText = Employe[j].getNom();
+                li3.innerHTML = Employe[j].getNom();
                 blocEquipe.appendChild(li3);
             }
             var ul4 = document.createElement("ul");
