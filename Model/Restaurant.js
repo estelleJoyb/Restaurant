@@ -1,14 +1,17 @@
 export class Restaurant {
     employes = new Array();
 
-    constructor(nom, adresse, tel, type, horaires, nbPlaces){
+    constructor(nom, adresse, tel, type, horaires, nbPlaces, employes = [], plats = [], menus = [], reservations = []){
         this.nom = nom;
         this.adresse = adresse;
         this.tel = tel;
         this.type = type;
         this.horaires = horaires;
         this.nbPlaces = nbPlaces;
-        this.employes = employes;
+        this.employes = employes || [];
+        this.plats = plats || [];
+        this.menus = menus || [];
+        this.reservations = reservations || [];
     }
 
     //getters : 
@@ -64,7 +67,7 @@ export class Restaurant {
     //add :
 
     addEmploye(empl){
-        this.employes.push(empl)
+        this.employes.push(empl);
     }
 
     addReservation(resa){

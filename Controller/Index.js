@@ -8,6 +8,7 @@ import { Stock } from '../Model/Stock.js';
 import { TypeRestaurant } from "../Model/TypeRestaurant.js";
 import { TypeDePlat } from "../Model/TypeDePlat.js";
 import Categorie  from "../Model/Categorie.js";
+import { Status } from "../Model/Status.js";
 
 
 // require('../Model/Salaires');
@@ -98,14 +99,14 @@ function Init()
     VoyageCulinaire.addReservation(R_Dan);
     //plats
     var BlocPlat = document.getElementById("bloc_plat");
-    var plats = VoyageCulinaire.getPlats();
+    var plats = VoyageCulinaire.getPlat();
     var ul1 = document.createElement("ul");
-    BlocMenu.appendChild(ul1);
-    for(var i = 0; i< VoyageCulinaire.getPlats().size(); i++){
+    BlocPlat.appendChild(ul1);
+    for(var i = 0; i< VoyageCulinaire.getPlat().size; i++){
         var li = document.createElement("li");
         li.classList.add("plat");
         li.innerText = plats[i].getNom() +" : "+ plats[i].getDescription();
-        BlocMenu.appendChild(li);
+        BlocPlat.appendChild(li);
     }
     var ul2 = document.createElement("ul");
     BlocPlat.appendChild(ul2);
@@ -115,7 +116,7 @@ function Init()
     var menus = VoyageCulinaire.getMenus();
     var ul1 = document.createElement("ul");
     BlocMenu.appendChild(ul1);
-    for(var i = 0; i< VoyageCulinaire.getMenus().size(); i++){
+    for(var i = 0; i< VoyageCulinaire.getMenus().size; i++){
         var li = document.createElement("li");
         li.classList.add("menu");
         li.innerText = menus[i].getNom() + " : " +menus[i].getDescription();
@@ -133,16 +134,19 @@ function Init()
 
     //equipe :
     var blocEquipe = document.getElementById("blocEquipe");
-    var ul3 = document.createElement("ul");
-    blocEquipe.appendChild(ul3);
-    for (var j = 0; j < VoyageCulinaire.Employe.size(); j++){
-        var li3 = document.createElement("li");
-        li3.classList.add("equipe");
-        li4.innerText = Employe[i].getNom;
-        blocEquipe.appendChild(li);
+    if( blocEquipe != null){
+        var ul3 = document.createElement("ul");
+            blocEquipe.appendChild(ul3);
+            for (var j = 0; j < VoyageCulinaire.Employe.size; j++){
+                var li3 = document.createElement("li");
+                li3.classList.add("equipe");
+                li4.innerText = Employe[i].getNom;
+                blocEquipe.appendChild(li);
+            }
+            var ul4 = document.createElement("ul");
+            blocEquipe.appendChild(ul3);
     }
-    var ul4 = document.createElement("ul");
-    blocEquipe.appendChild(ul3);
+   
 }
 
 function Reserver()

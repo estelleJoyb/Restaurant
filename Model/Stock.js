@@ -5,19 +5,19 @@ export class Stock {
         this.nbProduit = nbProduit;
     }
 
-    get produit(){
+    getProduit(){
         return this.produit;
     }
 
-    get nbProduit(){
+    getNbProduit(){
         return this.nbProduit;
     }
 
-    set produit(produit){
+    setProduit(produit){
         this.produit = produit;
     }
 
-    set nbProduit(nbProduit){
+    setNbProduit(nbProduit){
         this.nbProduit = nbProduit;
     }
 }

@@ -1,10 +1,10 @@
 export class Menu {
 
-    constructor(nom, description, prix) {
+    constructor(nom, description, prix, plats = []) {
         this.nom = nom;
         this.description = description;
         this.prix = prix;
-        this.plats = plats;
+        this.plats = plats || [];
     }        
 
     getNom(){
