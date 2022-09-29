@@ -1,6 +1,6 @@
 export class Restaurant {
-    employe = new Array();
-    
+    employes = new Array();
+
     constructor(nom, adresse, tel, type, horaires, nbPlaces){
         this.nom = nom;
         this.adresse = adresse;
