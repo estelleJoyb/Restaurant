@@ -144,8 +144,8 @@ function Init()
         console.log('EQUIPE');
         console.log(VoyageCulinaire.getEmployes()[0].getNom());
         var ul3 = document.createElement("ul");
-            blocEquipe.appendChild(ul3);
-            for (var j = 0; j <= VoyageCulinaire.getEmployes().size; j++){
+        blocEquipe.appendChild(ul3);
+            for (var j = 0; j <= 3; j++){
                 console.log(j);
                 console.log(Employe[j].getNom());
                 var li3 = document.createElement("li");
