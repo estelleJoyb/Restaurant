@@ -1,9 +1,5 @@
-class Status {
-    static PasArrive = new Status("PasArrive")
-    static EnCours = new Status("EnCours")
-    static Regle = new Status("Regle")
-  
-    constructor(name) {
-      this.name = name
-    }
+  const Status = {
+    PasArrive: "Pas Arrivé",
+    EnCours: "En Cours",
+    Regle: "Reglé"
   }

@@ -3,6 +3,7 @@ import {Employe} from './class/Employe';
 import {Stock} from './class/Stock';
 import {Plat} from './class/Plat';
 import {Menu} from './class/Menu';
+import {Reservation} from './class/Reservation';
 
 const VoyageCulinaire = new Restaurant("Voyage culinaire","12, rue de la vierge","06 12 12 12 12",TypeRestaurant.Bistro,"12h-14h & 19h-23h","30");
 
@@ -60,3 +61,10 @@ VoyageCulinaire.addMenu(MenuPlaisir);
 VoyageCulinaire.addMenu(MenuEco);
 
 //Reservation
+const R_Mireille = new Reservation("29/09/2022","Mireille",Status.EnCours,"4");
+const R_Joseph = new Reservation("05/10/2022","Joseph",Status.PasArrive);
+const R_Dan = new Reservation("25/09/2022","Dan",Status.Regle);
+
+VoyageCulinaire.addReservation(R_Mireille);
+VoyageCulinaire.addReservation(R_Joseph);
+VoyageCulinaire.addReservation(R_Dan);

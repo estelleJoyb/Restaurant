@@ -1,9 +1,10 @@
 class Reservation {
 
-    constructor(dateRes, nom, status) {
+    constructor(dateRes, nom, status, nbpersonne) {
         this.dateRes = dateRes;
         this.nom = nom;
         this.status = status;
+        this.nbpersonne = nbpersonne;
     }
 
     getDateRes() {
@@ -21,9 +22,17 @@ class Reservation {
     setNom(nom) {
       this.nom = nom;
     }
+
+    setNbPersonne(nbpersonne){
+      this.nbpersonne = nbpersonne;
+    }
   
     getStatus() {
       return this.status;
+    }
+
+    getNbPersonnes() {
+      return this.nbpersonne;
     }
   
     setStatus(status) {
