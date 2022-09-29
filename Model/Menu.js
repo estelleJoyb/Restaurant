@@ -4,6 +4,7 @@ export class Menu {
         this.nom = nom;
         this.description = description;
         this.prix = prix;
+        this.plats = plats;
     }        
 
     getNom(){
