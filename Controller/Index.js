@@ -5,7 +5,7 @@
 // import {Plat} from '../class/Plat';
 // import {Menu} from '../class/Menu';
 // import {Reservation} from '../class/Reservation';
-require(['../Model/Restaurant'], Restaurant);
+require(['../Model/Restaurant']);
 require(['../Model/Employe']);
 require(['../Model/Salaires']);
 require(['../Model/Stock']);
