@@ -1,10 +1,12 @@
-import { Salaires } from '../Model/Salaires.js';
-import { Employe } from '../Model/Employe.js';
-import { Menu } from '../Model/Menu.js';
-import { Plat } from '../Model/Plat.js';
-import { Reservation } from '../Model/Reservation';
-import { Restaurant } from '../Model/Restaurant';
-import { Stock } from '../Model/Stock.js';
+// import { Salaires } from '../Model/Salaires.js';
+// import { Employe } from '../Model/Employe.js';
+// import { Menu } from '../Model/Menu.js';
+// import { Plat } from '../Model/Plat.js';
+// import { Reservation } from '../Model/Reservation';
+// import { Restaurant } from '../Model/Restaurant';
+// import { Stock } from '../Model/Stock.js';
+
+
 // require('../Model/Salaires');
 // require('../Model/Employe');
 // require('../Model/Stock');
