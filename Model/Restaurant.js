@@ -6,6 +6,7 @@ export class Restaurant {
         this.type = type;
         this.horaires = horaires;
         this.nbPlaces = nbPlaces;
+        this.employes = this.employes;
     }
 
     //getters : 
