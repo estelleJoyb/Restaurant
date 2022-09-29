@@ -141,15 +141,13 @@ function Init()
     //equipe :
     var blocEquipe = document.getElementById("blocEquipe");
     if(blocEquipe != null){
-        console.log('EQUIPE');
-        console.log(VoyageCulinaire.getEmployes()[0].getNom());
         var ul3 = document.createElement("ul");
             blocEquipe.appendChild(ul3);
             for (var j = 0; j <= VoyageCulinaire.getEmployes().size; j++){
                 console.log(Employe[j].getNom());
                 var li3 = document.createElement("li");
                 li3.classList.add("equipe");
-                li3.innerHTML = Employe[j].getNom();
+                li3.innerHTML = VoyageCulinaire.getEmployes()[j].getNom();
                 ul3.appendChild(li3);
             }
             
