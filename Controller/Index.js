@@ -148,6 +148,7 @@ function Init()
                 var li3 = document.createElement("li");
                 li3.classList.add("equipe");
                 li3.innerHTML = VoyageCulinaire.getEmployes()[j].getNom();
+                console.log(VoyageCulinaire.getEmployes()[j].getNom());
                 ul3.appendChild(li3);
             }
             
