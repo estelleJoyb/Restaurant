@@ -108,9 +108,17 @@ function Init()
         var ul2 = document.createElement("ul");
         
         for(var i = 0; i< VoyageCulinaire.getMenus().length; i++){
+            var plats = menus[i].getPlats();
             var li = document.createElement("li");
             li.classList.add("menu");
             li.innerHTML = menus[i].getNom() + " : " +menus[i].getDescription();
+            var ul_dans_li = document.createElement("ul");
+            for(var j = 0; j< plats.length; j++ ){
+                var li_dans_li = document.createElement("li");
+                li_dans_li.innerText = plats[j].getNom() + " : "+plats[j].getDescription();
+                ul_dans_li.appendChild(li_dans_li);
+            }
+            li.appendChild(ul_dans_li);
             ul2.appendChild(li);
         }
         BlocMenu.appendChild(ul2);
